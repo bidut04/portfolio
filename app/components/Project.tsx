@@ -235,7 +235,7 @@ const ProjectCard = ({ project, index, onHover, onLeave, isHovered }: ProjectCar
           {/* Project Header */}
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
+              <h2 className="text-xl font-bold mb-2 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
                 {project.name}
               </h2>
               <div className="flex items-center gap-2 text-sm flex-wrap">
@@ -377,7 +377,7 @@ export default function ProjectShowcase() {
             data-scroll
             data-scroll-speed="2"
           >
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               My Projects
             </h1>
             <p className="text-gray-300 text-xl max-w-2xl mx-auto">
@@ -395,7 +395,7 @@ export default function ProjectShowcase() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-8 py-3 rounded-full font-medium transition-all text-lg ${
+                className={`px-8 py-3 rounded-full font-medium transition-all text-sm md:text-base ${
                   selectedCategory === cat
                     ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/50 scale-105'
                     : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:scale-105'
@@ -407,7 +407,7 @@ export default function ProjectShowcase() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-20 px-15">
             {filteredProjects.map((project, index) => (
               <ProjectCard
                 key={project.id}
