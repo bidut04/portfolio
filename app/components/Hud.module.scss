@@ -1,0 +1,62 @@
+$color-teal: #59b29e;
+$color-teal-2: #00ffc3;
+$color-red: #f63b4c;
+$color-dark: #0f0026;
+$font-thin: "TTSquaresCondensed-Thin";
+
+.root {
+  background: $color-dark;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: #afe3d7;
+}
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.gui {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 25% 50% 25%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.uiBorderV2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  fill: $color-teal;
+  width: 620px;
+  
+  &.t { top: 10px; }
+}
+
+.batt {
+  width: 12px;
+  height: 3px;
+  background: $color-red;
+}
+
+.title {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-family: $font-thin;
+  
+  em {
+    font-style: normal;
+    color: $color-teal-2;
+    text-shadow: 0 0 10px $color-teal-2;
+  }
+}
+
+/* Add the rest of your SCSS logic here, 
+   ensuring class names match the 'styles.className' 
+   used in your TSX file */

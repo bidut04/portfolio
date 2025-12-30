@@ -24,3 +24,78 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  background: black;
+  margin: 0;
+}
+
+@keyframes rayMove {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+ @keyframes ray-move {
+          0%, 100% { opacity: 0.2; }
+          50% { opacity: 0.5; }
+        }
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 1; }
+        }
+.animate-ray {
+  animation: rayMove 4s ease-in-out infinite;
+}
+
+  @keyframes pulse {
+          0%, 100% {
+            opacity: 0.7;
+            transform: translateX(-50%) rotate(var(--rotation)) scaleY(1);
+          }
+          50% {
+            opacity: 0.8;
+            transform: translateX(-50%) rotate(var(--rotation)) scaleY(1.2);
+          }
+        }
+        
+        @keyframes float {
+          0%, 100% {
+            transform: translate(0, 0);
+            opacity: 0.6;
+          }
+          50% {
+            transform: translate(-20px, -20px);
+            opacity: 0.4;
+          }
+        }
+
+          @keyframes ray-move {
+          0%, 100% { opacity: 0.2; }
+          50% { opacity: 0.5; }
+        }
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 1; }
+        }
+
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+
+        @keyframes scroll-right {
+          0% {
+            transform: translateX(-33.333%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
