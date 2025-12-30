@@ -840,12 +840,12 @@ const SplitScreenHud = () => {
           );
         })}
 
-        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-8">
+        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-4">
           <div className="glitch-wrapper">
             <h1 className="glitch-main text-[min(10vw,100px)] leading-none uppercase font-thin tracking-[0.2em]">
-              <span className="text-white font-semibold text-9xl">BIDYUT</span>
+              <span className="text-white font-semibold text-7xl">BIDYUT</span>
               <span className="text-blue-500 font-semibold">.</span>
-              <span className="text-blue-400 font-semibold text-9xl">FOLIO</span>
+              <span className="text-blue-400 font-semibold text-7xl">FOLIO</span>
               
             </h1>
             

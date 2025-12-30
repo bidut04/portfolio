@@ -73,10 +73,10 @@ const ResumeSection = () => {
       >
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
             Bidyut Kumar Bhowmick
           </h2>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+          <p className="text-gray-300 text-sm max-w-3xl mx-auto mb-4">
             Results-oriented Engineer with excellent communication and team leadership skills. Quick learner and adaptable to new technologies.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-gray-300">
@@ -182,9 +182,9 @@ const ProjectCard = ({ project, index, onHover, onLeave, isHovered }: ProjectCar
       onMouseEnter={() => onHover(project.id)}
       onMouseLeave={onLeave}
     >
-      <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 h-full group">
+      <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 h-full group">
         {/* Image Container with Target Lock Effect */}
-        <div className="relative h-64 overflow-hidden">
+        <div className="relative h-48 overflow-hidden">
           <img 
             src={project.demoImage} 
             alt={project.name}
