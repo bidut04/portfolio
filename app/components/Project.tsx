@@ -377,7 +377,7 @@ export default function ProjectShowcase() {
             data-scroll
             data-scroll-speed="2"
           >
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               My Projects
             </h1>
             <p className="text-gray-300 text-xl max-w-2xl mx-auto">
