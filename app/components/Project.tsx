@@ -231,7 +231,7 @@ const ProjectCard = ({ project, index, onHover, onLeave, isHovered }: ProjectCar
         </div>
 
         {/* Project Content */}
-        <div className="p-8">
+        <div className="p-8 ">
           {/* Project Header */}
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1">

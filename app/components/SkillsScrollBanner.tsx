@@ -65,13 +65,14 @@ const SkillsScrollBanner: React.FC = () => {
               {/* Animated Glow Backdrop */}
               <div className="absolute inset-0 bg-blue-500/30 blur-[40px] rounded-full scale-50 opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700" />
               
-              <img 
-                src={skill.logo} 
-                alt={skill.name}
-                className="w-16 h-16 md:w-20 md:h-20 object-contain relative z-10 
-                           grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 
-                           group-hover:scale-125 transition-all duration-500 ease-out"
-              />
+             <img 
+  src={skill.logo} 
+  alt={skill.name}
+  className="w-10 h-10 md:w-12 md:h-12 object-contain relative z-10 
+             grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 
+             group-hover:scale-110 transition-all duration-500 ease-out"
+/>
+
             </div>
             
             {/* Minimalist Text */}
