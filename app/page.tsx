@@ -7,6 +7,7 @@ import BouncyString from "./components/BouncyString";
 import ResumeSection from "./components/ResumeSection";
 import HeroSection from "./components/HeroSection";
 import Building from "./components/Building";
+import SkillsScrollBanner from "./components/SkillsScrollBanner";
 
 export default function Home() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -61,6 +62,7 @@ export default function Home() {
           <Building/>
           
         <ProjectShowcase />
+        <SkillsScrollBanner/>
         <ResumeSection/>
         <BouncyString/>
       </div>
