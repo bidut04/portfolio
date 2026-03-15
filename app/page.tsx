@@ -5,6 +5,8 @@ import CyberBackground from "./components/cyberBackgriund";
 import ProjectShowcase from "./components/Project";
 import BouncyString from "./components/BouncyString";
 import ResumeSection from "./components/ResumeSection";
+import HeroSection from "./components/HeroSection";
+import Building from "./components/Building";
 
 export default function Home() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -50,10 +52,14 @@ export default function Home() {
 </div>
 
       {/* Cyber background with split reveal effect */}
-      <CyberBackground />
-      
+      {/* <CyberBackground /> */}
+      <HeroSection/>
       {/* Projects section with smooth scroll */}
       <div className="relative z-10">
+
+         
+          <Building/>
+          
         <ProjectShowcase />
         <ResumeSection/>
         <BouncyString/>

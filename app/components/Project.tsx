@@ -58,9 +58,29 @@ const initialProjects = [
     architecture: 'Monorepo',
     features: ['Multi-app architecture', 'Restaurant approval system', 'Real-time tracking', 'Menu management', 'Order processing'],
     demoImage: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop'
+  },
+  // ✅ NEW — NoobDoc
+  {
+    id: 5,
+    name: 'NoobDoc',
+    description: 'A community-driven developer documentation platform where developers can explore versioned tech stack guides, contribute library documentation, and find install commands across all major package managers — all in one place.',
+    githubLink: 'https://github.com/bidut04/noob-doc',
+    liveLink: 'https://noob-doc-web-oklt.vercel.app/',
+    techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Redis', 'Clerk'],
+    category: 'Education & Docs',
+    architecture: 'Monorepo',
+    features: [
+      'Versioned tech stack documentation',
+      'Auto-generated setup guides per version',
+      'npm / pnpm / yarn / bun install commands',
+      'Version lifecycle tracking (Active, LTS, Beta, Deprecated)',
+      'Community library documentation contributions',
+      'Redis caching for fast lookups',
+      'Clerk authentication',
+    ],
+    demoImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop'
   }
 ];
-
 // Resume Component
 const ResumeSection = () => {
   return (

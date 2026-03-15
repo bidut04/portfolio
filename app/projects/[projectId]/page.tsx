@@ -248,9 +248,77 @@ const projectsData: ProjectsData = {
       'Efficient data caching strategy',
       'Scalable microservices-ready architecture'
     ]
+  },
+
+  // ✅ NEW — NoobDoc
+  5: {
+    id: 5,
+    name: 'NoobDoc',
+    description: 'Community-driven developer documentation platform with versioned tech stack guides and library contributions',
+    fullDescription: 'NoobDoc is a community-powered documentation platform built for developers of all levels. It provides versioned setup guides for popular tech stacks, auto-generated documentation per release, and a contribution system where developers can write and publish library documentation. Built as a Turborepo monorepo with Redis caching, Prisma ORM, and Clerk authentication for a fast, secure, and scalable experience.',
+    githubLink: 'https://github.com/bidut04/noob-doc',
+    liveLink: 'https://noob-doc-web-oklt.vercel.app/',
+    techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Redis', 'Clerk', 'Turborepo', 'TanStack Query', 'Cloudinary', 'Tailwind CSS'],
+    category: 'Education & Docs',
+    architecture: 'Monorepo',
+    demoImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=800&fit=crop',
+    features: [
+      'Versioned tech stack documentation',
+      'Auto-generated setup guides per version',
+      'npm / pnpm / yarn / bun install commands',
+      'Version lifecycle tracking (Active, LTS, Beta, Deprecated)',
+      'Community library documentation contributions',
+      'Tech stack categories (Frontend, Backend, Database, DevOps, Mobile and more)',
+      'Redis caching for fast doc lookups',
+      'Clerk authentication for contributors',
+      'Image uploads via Cloudinary',
+      'Popular tech stack discovery'
+    ],
+    workflow: [
+      {
+        title: 'Authentication',
+        description: 'Developers sign in via Clerk. On first login, a user record is automatically upserted into PostgreSQL with their profile details.'
+      },
+      {
+        title: 'Browsing Tech Stacks',
+        description: 'Visitors can explore tech stacks filtered by category, search query, or popularity. Results are Redis-cached for fast response times.'
+      },
+      {
+        title: 'Creating a Tech Stack',
+        description: 'Authenticated users can add a new tech stack with name, slug, category, logo, and official URL through a 3-step guided form.'
+      },
+      {
+        title: 'Adding Versions',
+        description: 'Each tech stack supports multiple versions with status labels (Active, LTS, Beta, Deprecated), changelogs, and release dates.'
+      },
+      {
+        title: 'Install Commands',
+        description: 'Per-version install commands are configured for npm, pnpm, yarn, and bun. A default package manager can be flagged per version.'
+      },
+      {
+        title: 'Auto Doc Generation',
+        description: 'When a version is created, a setup guide Doc is automatically published and linked to that version — no manual doc creation needed.'
+      },
+      {
+        title: 'Library Contributions',
+        description: 'Community members can contribute documentation for libraries they use or maintain, expanding the platform\'s knowledge base collaboratively.'
+      }
+    ],
+    howItWorks: 'NoobDoc is structured as a Turborepo monorepo with shared packages for database access, Redis, and UI components. The Next.js frontend uses TanStack Query for data fetching and optimistic updates. Prisma ORM manages type-safe PostgreSQL operations. Redis caches tech stack list queries to reduce database load. Clerk handles authentication and user management. Cloudinary stores logos and icons. When a new tech stack version is created, a Doc is auto-generated and published within the same Prisma transaction, ensuring data consistency.',
+    technicalHighlights: [
+      'Monorepo architecture with Turborepo and shared packages',
+      'Auto-generated versioned docs inside a Prisma transaction',
+      'Redis caching with TTL for tech stack list queries',
+      'Type-safe database operations with Prisma ORM',
+      'Clerk authentication with automatic user upsert on login',
+      'Per-version install commands for all major package managers',
+      'Cloudinary integration for logo and icon uploads',
+      'Duplicate version detection with real-time API checks',
+      'Optimistic UI updates with TanStack Query',
+      'Version lifecycle management (Active, LTS, Beta, Deprecated)'
+    ]
   }
 };
-
 export default function ProjectDetailPage() {
 const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
