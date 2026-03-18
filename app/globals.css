@@ -106,7 +106,7 @@ body {
 /* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
 
 .reveal-section {
-  background: #0a0a0a;
+  background: #050a18;
   width: 100%;
   padding: 80px 20px;
   display: flex;
@@ -130,6 +130,8 @@ body {
   text-transform: uppercase;
   display: block;
   user-select: none;
+ 
+
 }
 
 .reveal-outline {
@@ -144,4 +146,7 @@ body {
   top: 0; left: 0;
   clip-path: circle(0px at -999px -999px);
   pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+
 }
