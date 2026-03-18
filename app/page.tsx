@@ -8,6 +8,7 @@ import ResumeSection from "./components/ResumeSection";
 import HeroSection from "./components/HeroSection";
 import Building from "./components/Building";
 import SkillsScrollBanner from "./components/SkillsScrollBanner";
+import HoverFillText from "./components/HoverFillText";
 
 export default function Home() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -65,6 +66,13 @@ export default function Home() {
         <SkillsScrollBanner/>
         <ResumeSection/>
         <BouncyString/>
+        <div style={{
+          paddingBottom:"100px"
+        }}>
+<HoverFillText/>
+          </div>
+
+
       </div>
     </main>
   );
